@@ -30,7 +30,7 @@ public class Server {
         ObjectOutputStream out = new ObjectOutputStream(soc.getOutputStream());
         ObjectInputStream in = new ObjectInputStream(soc.getInputStream());
         Player p= new Player(soc,out,in,mat);
-        
+
         }
     }
 
