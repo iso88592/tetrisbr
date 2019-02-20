@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tetris" />
-        <module name="Tetris" />
+        <module name="tetrisbr" />
       </profile>
     </annotationProcessing>
   </component>
