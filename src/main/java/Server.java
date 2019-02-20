@@ -13,7 +13,8 @@ public class Server {
                 ServerSocket Server = new ServerSocket(portNumber);
                 Socket soc = null;
                 soc = Server.accept();
-                socketThread(soc);
+                Boolean[][] matr = new Boolean[10][25];
+                socketThread(soc, matr);
             } catch (UnknownHostException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -25,10 +26,10 @@ public class Server {
         new Server();
     }
 
-    public void socketThread(Socket soc) throws IOException{
+    public void socketThread(Socket soc,Boolean[][] mat ) throws IOException{
         ObjectOutputStream out = new ObjectOutputStream(soc.getOutputStream());
         ObjectInputStream in = new ObjectInputStream(soc.getInputStream());
-
+        Player p= new Player(soc,out,in,mat);
 
         }
     }
