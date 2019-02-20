@@ -7,7 +7,7 @@ import java.net.Socket;
 public class Client {
     public static void main(String[] args) throws IOException {
         String line;
-        int portNumber=2345;
+        int portNumber=1721;
         String host = "localhost";
 
         Socket clinet = new Socket(host,portNumber);
@@ -17,7 +17,7 @@ public class Client {
 
         line = in.readLine();
         out.writeBytes(line+ "\n");
-        
+
 
         clinet.close();
 
