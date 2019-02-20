@@ -7,9 +7,7 @@ public class JatekKerelmek {
     Lobby lobby = new Lobby();
 
     public void uzenet() throws IOException {
-        for (int i = 0; i < players.size(); i++) {
-            players.get(i).out.writeObject(joined(players.get(i)));
-        }
+        for (Player player:players) player.out.writeObject(joined(player));
     }
 
     public String joined(Player player){
