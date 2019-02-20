@@ -3,23 +3,23 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
+import java.net.SocketAddress;
 
 public class Client {
-    public static void main(String[] args) throws IOException {
+    Client() throws IOException {
         String line;
-        int portNumber=1721;
+        int portNumber = 9999;
         String host = "localhost";
 
-        Socket clinet = new Socket(host,portNumber);
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Socket clinet = new Socket(host, portNumber);
         DataOutputStream out = new DataOutputStream(clinet.getOutputStream());
         BufferedReader in = new BufferedReader(new InputStreamReader(clinet.getInputStream()));
+//        line = in.readLine();
+//        out.writeBytes(line + "\n");
 
-        line = in.readLine();
-        out.writeBytes(line+ "\n");
+    }
 
-
-        clinet.close();
-
+    public static void main(String[] args) throws IOException {
+        Client c= new Client();
     }
 }
