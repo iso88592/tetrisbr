@@ -30,7 +30,7 @@ public class TetrisLobby {
     @RequestMapping("/lobby")
     public String lobby(@CookieValue String lobby, @CookieValue String playerId) {  //TODO: Count connecting players (can't until that part of backend is done)
 
-        return "lobby";
+        return "Jelenlegi játékosok: " + players.size();
     }
 
 
