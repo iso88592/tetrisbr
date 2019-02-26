@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tetris" />
         <module name="tetrisbr" />
+        <module name="tetrisbr2" />
       </profile>
     </annotationProcessing>
   </component>
