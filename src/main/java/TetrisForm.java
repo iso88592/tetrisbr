@@ -4,6 +4,6 @@ public class TetrisForm {
     private JPanel tetrisPanel;
 
     public TetrisForm() {
-        System.out.println("hát ez a gergő 4");
+        System.out.println("hát ez a gergő 55");
     }
 }
