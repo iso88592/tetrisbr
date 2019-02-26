@@ -11,10 +11,10 @@ public class Player {
     Cookie cookie;
     Round round;
 
-    public Player(String name, Cookie cookie, Round round){
+    public Player(String name, Cookie cookie){
         name=this.name;
         cookie=this.cookie;
-        round=this.round;
+        round = new Round();
     }
 
 }
