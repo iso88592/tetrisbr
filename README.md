@@ -1,3 +1,8 @@
+## Tetris Battle Royale
+
+Egy többjátékos Tetris, ami a Tetris99 által inspirált. 
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/iso88592/tetrisbr/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
