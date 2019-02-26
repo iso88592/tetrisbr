@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 public class TetrisLobby {
     @RequestMapping("/play")
     public RedirectView play(HttpServletResponse response) {
-        int lobbyId = 1;
-        Cookie cookie = new Cookie("lobby", String.valueOf(lobbyId));
-        cookie.setMaxAge(60*10);
-        int playerId = 1;
-        cookie = new Cookie("playerid", String.valueOf(playerId));
-        response.addCookie(cookie);
-        return new RedirectView("/lobby");
+        int lobbyId = 1; // lobby azonosítója
+        Cookie cookie = new Cookie("lobby", String.valueOf(lobbyId)); // süti létrehozása lobby néven
+        cookie.setMaxAge(60*10); // 10 percre beállítani a süti lejárási idejét
+        int playerId = 1; // játékos azonosítója
+        cookie = new Cookie("playerid", String.valueOf(playerId)); // süti létrehozása playerid néven
+        response.addCookie(cookie); // a süti hozzáadása a localhost:8080/play-hez
+        return new RedirectView("/lobby"); // localhost:8080/lobby megjelenítése
     }
 
     @RequestMapping("/lobby")
