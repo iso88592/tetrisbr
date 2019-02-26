@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tetris" />
+        <module name="Tetris2" />
         <module name="tetrisbr" />
         <module name="tetrisbr2" />
       </profile>
