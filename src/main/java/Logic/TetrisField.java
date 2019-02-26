@@ -16,7 +16,7 @@ public class TetrisField {
     }
 
     private void FillField() {
-        field = new boolean[width][height];
+        field = new boolean[height][width];
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
                 field[i][j] = false;
@@ -26,9 +26,9 @@ public class TetrisField {
 
     public void LogField() {
         for (int i = 0; i < height; i++) {
-            String line = "";
+            StringBuilder line = new StringBuilder();
             for (int j = 0; j < width; j++) {
-                line+=(field[i][j])?"X":" ";
+                line.append((field[i][j]) ? "X" : " ");
             }
             System.out.println(line);
         }
